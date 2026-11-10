@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+     <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="./style/styles.css">
+    </head>
+
+    <body>
+
+        <!-- Ajoutez cette div avant tout autre contenu dans la balise <body> -->
+        <div id="barre_fixe">Je suis une barre fixe - je reste toujours visible !</div>
+
+        <div class="exercice">
+            <h2>Partie B - Positionnement statique (par défaut)</h2>
+            <div class="boite">Boite 1 - static</div>
+            <div class="boite">Boite 2 - static</div>
+            <div class="boite">Boite 3 - static</div>
+        </div>
+
+
+        <div class="exercice">
+            <h2>Partie C - Positionnement relatif</h2>
+            <div class="boite" >Boite 1 - static (référence)</div>
+            <div class="boite" id="exemple_relatif">Boite 2 - relative (top:25px;left:40px;)</div>
+            <div class="boite" >Boite 3 - static (référence)</div>
+        </div>
+    
+    
+        <div class="exercice">
+            <h2>Exercice 1 - Décalages relatifs</h2>
+            <div class="boite" id="ex21_a">Boite A</div>
+            <div class="boite" id="ex21_b">Boite B</div>
+            <div class="boite" id="ex21_c">Boite C</div>
+        </div>
+
+        <div class="exercice">
+            <h2>Exercice 2 - La place est réservée</h2>
+            <div class="boite">Boite 1</div>
+            <div class="boite" id="ex22_b2">Boite 2 (décalée de 60px vers le bas)</div>
+            <div class="boite">Boite 3 (ne remonte pas)</div>
+        <div class="boite">Boite 4</div>
+    </div>
+
+    <div class="exercice">
+        <h2>Partie D.2 - Absolu par rapport à la page</h2>
+        <div class="boite">Boite 1 - static</div>
+        <div class="boite">Boite 2 - static</div>
+        <div class="boite" id="exemple_absolu">Boite 3 - absolute (top:10px; right:0px;)</div>
+        <div class="boite">Boite 4 - static (remonte car boite 3 n'est plus dans le flux)</div>
+    </div>
+
+    <div class="exercice">
+        <h2>Partie D.3 - Absolu dans un conteneur relatif</h2>
+        <div id="conteneur_relatif">
+            <p>Je suis le conteneur en position relative.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet.</p>
+        <div id="enfant_absolu">Je suis en absolu dans le conteneur</div>
+        </div>
+    </div>
+
+    <div class="exercice">
+        <h2>Exercice 3 - Positions absolues sur la page</h2>
+            <p>Observez les boites A, B et C positionnées en absolu.</p>
+        <div class="boite" id="ex31_a">Boite A</div>
+        <div class="boite" id="ex31_b">Boite B</div>
+        <div class="boite" id="ex31_c">Boite C</div>
+    </div>
+
+    <div class="exercice">
+        <h2>Exercice 4 - Absolu dans un conteneur</h2>
+        <div id="ex32_conteneur">
+        <div id="ex32_titre">Mon Titre</div>
+        <div id="ex32_bouton">Valider</div>
+        <div id="ex32_etiquette">Étiquette</div>
+    </div>
+    </div>
+
+    <div class="exercice">
+        <h2>Exercice 5 - top ET bottom simultanément</h2>
+        <div id="ex33_conteneur">
+        <div id="ex33_boite">Boite avec top:20px et bottom:20px</div>
+        </div>
+    </div>
+
+    <div class="exercice">
+        <h2>Partie E - Positionnement fixe</h2>
+            <p>Faites défiler la page pour observer la barre fixe en haut.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus. Nam venenatis semper sem. Proin condimentum fermentum nunc.</p>
+            <p>Continuer à faire défiler...</p>
+    </div>
+
+    <div class="boite" id="ex41_bouton">Haut</div>
+
+    <div id="ex42_menu">
+        <p>Navigation</p>
+        <ul>
+            <li>Accueil</li>
+            <li>Articles</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="exercice">
+        <h2>Partie F.2 - Chevauchement sans z-index</h2>
+        <div id="zindex_conteneur1">
+        <div class="zbloc z_rouge">Bloc rouge (dans le code en 1er)</div>
+        <div class="zbloc z_bleu">Bloc bleu (dans le code en 2ème)</div>
+        <div class="zbloc z_vert">Bloc vert (dans le code en 3ème)</div>
+    </div>
+
+    <div class="exercice">
+        <h2>Partie F.3 - Chevauchement avec z-index</h2>
+        <div id="zindex_conteneur2">
+        <div class="zbloc z_rouge2">Bloc rouge (z-index:3)</div>
+        <div class="zbloc z_bleu2">Bloc bleu (z-index:1)</div>
+        <div class="zbloc z_vert2">Bloc vert (z-index:2)</div>
+        </div>
+    </div>
+
+    <div class="exercice">
+        <h2>Exercice 8 - Classer avec z-index</h2>
+        <p>Sans z-index :</p>
+        <div class="ex51_conteneur" id="ex51_sans">
+        <div class="ex51_bloc ex51_a">A</div>
+        <div class="ex51_bloc ex51_b">B</div>
+        <div class="ex51_bloc ex51_c">C</div>
+        <div class="ex51_bloc ex51_d">D</div>
+    </div>
+        <p>Avec z-index (D > C > B > A) :</p>
+        <div class="ex51_conteneur" id="ex51_avec">
+        <div class="ex51_bloc ex51_a">A</div>
+        <div class="ex51_bloc ex51_b">B</div>
+        <div class="ex51_bloc ex51_c">C</div>
+        <div class="ex51_bloc ex51_d">D</div>
+        </div>
+    </div>
+
+    <div class="exercice">
+        <h2>Exercice 9 - Z-index négatif</h2>
+        <div id="ex52_conteneur">
+        <p>Je suis le texte normal du conteneur.</p>
+        <div id="ex52_derriere">Je suis censé passer derrière</div>
+        </div>
+    </div>
+
+    <div class="exercice">
+        <h2>Exercice 10 - Carte de visite</h2>
+        <div id="carte">
+        <div id="carte_nom">Jean DUPONT</div>
+        <div id="carte_titre">Développeur Web</div>
+        <div id="carte_logo">LOGO</div>
+        <div id="carte_tel">06 12 34 56 78</div>
+        <div id="carte_email">jean@exemple.com</div>
+        </div>
+    </div>
+
+
+
+    </body>
+
+</html>

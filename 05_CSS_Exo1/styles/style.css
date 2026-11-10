@@ -1,0 +1,17 @@
+p {
+    color: #FF0000;
+    background-color: black;
+    border: 20px solid yellow;
+    border-radius: 15px;
+    height: 100px;
+    width: 400px;
+    font-size: 25px;
+    padding: 50px;
+    text-align: center;
+}
+
+p:hover {
+    color: black;
+    background-color: #FF0000;
+}
+

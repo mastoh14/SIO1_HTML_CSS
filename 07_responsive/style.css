@@ -144,3 +144,19 @@ body {
     font-weight: bold;
 }
 /* À compléter (le style .menu de l'exercice 6 s'applique aussi ici) */
+#ex7 .menu {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    #ex7 .menu {
+    display: block;
+    }
+    #ex7 .menu li {
+        display: inline-block;
+    }
+
+    #ex7 .burger {
+    display: none;
+}
+
+}
